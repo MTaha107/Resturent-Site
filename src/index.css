@@ -1,0 +1,211 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    /* background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 36%, rgba(25,27,24,1) 65%, rgba(54,55,56,1) 88%); */
+   
+}
+
+
+/* for navbar */
+.Navbar{
+    position: fixed;
+    width: 100%;
+    backdrop-filter: blur(50px);
+}
+.Navbar a{
+    border-radius: 10px;
+    padding: 5px;
+}
+.Navbar a:hover{
+    background-color: rgb(27, 150, 27);
+    transition: .3s;
+}
+
+/* for header */
+.header{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header .headinfo{
+    margin: 100px;
+    color: beige;
+}
+.header .headinfo span{
+    color: rgb(27, 150, 27);
+}
+
+/* for sliderpage */
+.menuhead{
+    text-align: center;
+    color: beige;
+    background: rgb(111,12,12);
+    background: linear-gradient(90deg, rgba(111,12,12,1) 36%, rgba(69,6,13,1) 65%, rgba(0,0,0,1) 88%);
+    margin: 0;
+    padding: 20px;
+}
+.menusliderpage{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background: rgb(111,12,12);
+    background: linear-gradient(90deg, rgba(111,12,12,1) 36%, rgba(69,6,13,1) 65%, rgba(0,0,0,1) 88%);
+    padding: 20px;
+}
+.menusliderpage img{
+    margin: 40px;
+    border-radius: 20px;
+}
+
+
+/* for itempage */
+.Itempage{
+    background-color: black;
+    margin: 0;
+    padding: 30px;
+}
+.Itempage .productContainer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: beige;
+}
+.Itempage .productContainer .innercard{
+    margin: 20px;
+    background-color: rgb(69, 65, 65);
+    padding: 20px;
+    border-radius: 20px;
+}
+.Itempage .productContainer .innercard .orderbt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.Itempage .productContainer .innercard .orderbt .buynow:hover{
+    background-color: rgb(181, 185, 181);
+    cursor: pointer;
+}
+.Itempage .productContainer .innercard .orderbt .cart:hover{
+    background-color: rgb(107, 106, 106);
+    cursor: pointer;
+}
+.Itempage .productContainer .innercard .orderbt .cart span{
+    font-size: 1.2rem;
+    margin: 3px;
+}
+.detailpage{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(47, 45, 45);
+    color: beige;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.detailpage .crossbt button:hover{
+    background-color: rgb(151, 153, 151);
+    transition: .3s;
+}
+
+
+/* for app page */
+.Appspage{
+        background: rgb(111,12,12);
+        background: linear-gradient(90deg, rgba(111,12,12,1) 36%, rgba(69,6,13,1) 65%, rgba(0,0,0,1) 88%);
+        padding: 50px;
+        margin: 0;
+        text-align: center;
+        color: beige;
+}
+.Appspage .appcards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+}
+.Appspage .appcards .applestore:hover{
+    cursor: pointer;
+    background-color: rgb(105, 103, 103);
+    transition: .3s;
+}
+.Appspage .appcards .playstore:hover{
+    cursor: pointer;
+    background-color: rgb(179, 174, 174);
+    transition: .3s;
+}
+.Appspage .appcards svg{
+    margin-bottom: 7px;
+    margin-right: 5px;
+}
+
+/* for footer */
+.footer .alinks{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.footer .alinks a{
+    text-decoration: none;
+    color: beige;
+}
+
+@media only screen and (max-width: 600px) {
+    .detailpage{
+        height: auto;
+        width: 100%;
+    }
+    .header{
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    .burgerimg img{
+        width: 100%;
+        margin-top: 60px;
+    }
+    .menusliderpage img{
+        width: 100%;
+    }
+    .detailcontainer{
+        flex-direction: column;
+    }
+}
+
+
+
+/* New changes */
+.detailcontainer{
+    display: flex;
+    width: 80%;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+}
+.detailcontainer .name{
+    margin-bottom: 5%;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.detailcontainer .dec{
+    color: rgb(183, 182, 182);
+}
